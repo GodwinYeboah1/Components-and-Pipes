@@ -1,8 +1,8 @@
 <div class="inner-layout">
     <h1>Time Formats</h1>
     <div>
-        <h4>mediumTime -  </h4>
-        <h4>shortTime  -  </h4>
-        <h4>custom - </h4>
+        <h4>mediumTime - {{ dateObj | date: "medium" }}  </h4>
+        <h4>shortTime  - {{ dateObj | date: "shortTime" }}  </h4>
+        <h4>custom - {{ dateObj | date: "hh:mm:ss" }} </h4>
     </div>
 </div>

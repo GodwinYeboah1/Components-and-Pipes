@@ -10,6 +10,8 @@ export class TimeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+   
   }
-
+  // date object 
+  dateObj: Date = new Date();
 }
