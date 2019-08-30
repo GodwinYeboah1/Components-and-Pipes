@@ -1,1 +1,9 @@
-<h1>Currencies Formats</h1>
+<div class="inner-layout">
+    <h1>Currencies Formats</h1>
+    <div>
+        <h4>USD <b>(no format)</b> - {{ value | currency :'CAD':'code' }} </h4>
+        <h4>EUR <b>(currency format)</b> - USD,  {{ value | currency: 'values' }} </h4>
+        <h4>AUS <b>(currency 1.2 format = 2 dec values)</b> - AUS5, {{ value | currency:'3.2-5' }}  </h4>
+        <h4>CNY <b>(1.0 = 0 dec values if value over '0' present)</b> - CN {{value |currency: 'JPY':'symbol'}} </h4>
+    </div>
+</div>
